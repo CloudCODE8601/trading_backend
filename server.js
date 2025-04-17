@@ -21,7 +21,7 @@ function connectToBinance(ws, pairs) {
     }
 
     // Construct the WebSocket URL for Binance
-    const streamUrl = `wss://stream.binance.com:9443/ws/${pairs.join('/')}`;
+    const streamUrl = "wss://stream.binance.com:9443/ws/btcusdt@trade";
     const binanceSocket = new WebSocket(streamUrl);
 
     binanceSocket.on('open', () => {
